@@ -1,0 +1,35 @@
+/* 
+    Document   : osc-style
+    Created on : 6 Nov, 2014, 10:55:16 AM
+    Author     : unicode
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+.overlay-view-more{transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%);white-space: nowrap;margin-left: 50%;margin-top: 50%;position: absolute;}
+.overlay-view-more .view-more{ width: 100%;box-sizing: border-box;-webkit-box-sizing: border-box;display: inline-block; background:#ec4918;border-radius: 5px;color: #ffffff;font-size: 13px;padding: 8px 12px; width: 100%; text-align: center;}
+.overlay-view-more .view-more .view-icon{ width: auto;box-sizing: border-box;-webkit-box-sizing: border-box;display: inline-block; background: url("../images/view.png") no-repeat 2px 0px;padding-left: 25px;}
+.overlay-view-more .view-more:hover{color:#fff}
+.overlay{background: #000; opacity:.8;position: fixed; width:100%; height:100%; left:0; top:0;z-index: 9;}
+.prev-prod, .next-prod{position:absolute;top:50%;font-size: 0; text-indent: -9999em; width:15px; height:26px;display: block; }
+.prev-prod{background: url(../images/prev-next.png) no-repeat 0 -39px; left:20px;}
+/*.prev-prod:hover{background-position: }*/
+.next-prod{background: url(../images/prev-next.png) no-repeat;right:20px; }
+.quickview-product-box .page-content, .quickview-product-box .entry-content {width:100%;max-width: 100%;padding: 0;}
+.quickview-product-box .images .thumbnails a.zoom.selected {background: #333}
+.quickview-product-box .images .thumbnails a.zoom.selected img{opacity:.7;}
+.woocommerce #content div.product div.thumbnails a.zoom:nth-child(3n){margin-right: 0;}
+.woocommerce #content div.product div.thumbnails a.zoom{margin-bottom: 3.8%;}
+.quickview-product-box .quantity input.decrement{ background:  #e9e5e8;border: 0 none;bottom: 0;color: #777;font-size: 14px;height: 14px; border: 1px solid #c8bfc6;border-radius: 0;line-height: 10px;padding: 0;position: absolute;right: 0;width: 20px;}
+.quickview-product-box .quantity input.increment{ background:  #e9e5e8;border: 0 none;color: #777;border: 1px solid #c8bfc6;border-radius: 0;border-bottom: 0;font-size: 14px;height: 14px;padding: 0;position: absolute;right: 0;top: 0;width: 20px;line-height: 10px;}
+.quickview-product-box .quantity input[type="button"]:hover{background: #e9e5e8}
+.quickview-product-box .quantity input[type="button"]:active, .quantity input[type="button"]:focus,  .quantity input[type="button"]:hover{padding: 0;background:  #e9e5e8;}
+.quickview-product-box .quantity input.increment:active{border: 1px solid #c8bfc6;border-radius: 0;border-bottom: 0;}
+.quickview-product-box .quantity input.decrement:active{ border: 1px solid #c8bfc6;border-radius: 0;}
+a:hover,a:visited,a:active,a:focus{outline:0;}
+body a:focus{outline:none}
+.quickview-product-box #cboxLoadedContent{margin-bottom: 0;padding: 15px;}
+.woocommerce .quickview-product-box div.product div.summary{margin: 0 !important;float:left;padding: 30px 20px;}
