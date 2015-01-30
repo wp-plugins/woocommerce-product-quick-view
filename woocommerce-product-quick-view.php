@@ -36,7 +36,7 @@ function child_plugin_activate() {
 add_action('admin_menu', 'qv_admin_actions'); // Displays link to our settings page in the admin menu
 
 function qv_admin_actions() {
-    $page_hook_suffix = add_options_page("Quick View Settings", "Woocommerce Product Quick View", 'manage_options', "quick-view", "qv_admin");
+    $page_hook_suffix = add_options_page("Quick View Settings", "Quick View Settings", 'manage_options', "quick-view", "qv_admin");
 
     add_action('admin_print_scripts-' . $page_hook_suffix, 'qv_admin_scripts');
 }
@@ -47,7 +47,7 @@ function qv_admin_scripts() {
 }
 
 function qv_admin() { // Function that includes the actual settings page
-    include('woocomerce-product-quick-view-admin.php');
+    include('inc/admin.php');
 }
 
 add_action('wp_enqueue_scripts', 'enqueue_scripts');
