@@ -6,9 +6,7 @@
         Purpose of the stylesheet follows.
 */
 
-root { 
-    display: block;
-}
+root {display: block;}
 .overlay-view-more{transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%);white-space: nowrap;margin-left: 50%;margin-top: 50%;position: absolute;}
 .overlay-view-more .view-more{ width: 100%;box-sizing: border-box;-webkit-box-sizing: border-box;display: inline-block; background:#ec4918;border-radius: 5px;color: #ffffff;font-size: 13px;padding: 8px 12px; width: 100%; text-align: center;}
 .overlay-view-more .view-more .view-icon{ width: auto;box-sizing: border-box;-webkit-box-sizing: border-box;display: inline-block; background: url("../images/view.png") no-repeat 2px 0px;padding-left: 25px;}
@@ -33,3 +31,9 @@ a:hover,a:visited,a:active,a:focus{outline:0;}
 body a:focus{outline:none}
 .quickview-product-box #cboxLoadedContent{margin-bottom: 0;padding: 15px;}
 .woocommerce .quickview-product-box div.product div.summary{margin: 0 !important;float:left;padding: 30px 20px;}
+.owl-controls{position: absolute;right: 10px;top: -45px;}
+.owl-prev{ background: url("../images/prev-next.png") no-repeat scroll 5px -109px #ffffff;border: 1px solid #ebebeb;border-radius: 3px;display: inline-block;font-size: 0;height: 20px;text-indent: -9999em;width: 20px;margin-right: 3px;}
+.owl-next{ background: url("../images/prev-next.png") no-repeat scroll 6px -89px #ffffff;border: 1px solid #ebebeb;border-radius: 3px;display: inline-block;font-size: 0;height: 20px;text-indent: -9999em;width: 20px;}
+.owl-prev:hover, .owl-next:hover{opacity: .6;}
+.woocommerce .quickview-product-box div.product div.thumbnails a, .woocommerce div.product div.thumbnails a, .woocommerce-page .quickview-product-box div.product div.thumbnails a, .woocommerce-page div.product div.thumbnails a{width:150px;}
+/*.woocommerce .quickview-product-box div.product div.thumbnails a:nth-child(3n), .woocommerce div.product div.thumbnails a:nth-child(3n), .woocommerce-page .quickview-product-box div.product div.thumbnails a:nth-child(3n), .woocommerce-page div.product div.thumbnails a:nth-child(3n){margin-right: 0;}*/

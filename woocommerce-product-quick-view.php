@@ -3,7 +3,7 @@
   Plugin Name: Woocommerce Product Quick View
   Plugin URI: http://www.unicodesystems.in
   Description: This plugin is used for adding the quick view functionality to your woocommerce store. Woocommerce plugin is pre-requisite for this plugin to run.
-  Version: 1.0
+  Version: 1.1
   Author: Harshita
   Author URI: http://www.unicodesystems.in
 
@@ -33,18 +33,35 @@ function child_plugin_activate() {
         wp_die('Sorry, this plugin requires Woocommerce Plugin to be installed and active. <br><a href="' . admin_url('plugins.php') . '">&laquo; Return to Plugins</a>');
     }
 }
+add_action('admin_menu', 'qv_admin_actions'); // Displays link to our settings page in the admin menu
+
+function qv_admin_actions() {
+    $page_hook_suffix = add_options_page("Quick View Settings", "Woocommerce Product Quick View", 'manage_options', "quick-view", "qv_admin");
+
+    add_action('admin_print_scripts-' . $page_hook_suffix, 'qv_admin_scripts');
+}
+
+
+function qv_admin_scripts() {
+   wp_enqueue_script('popup', QV_PLUGIN_JS_URL . '/jscolor.js', array('jquery'));
+}
+
+function qv_admin() { // Function that includes the actual settings page
+    include('woocomerce-product-quick-view-admin.php');
+}
 
 add_action('wp_enqueue_scripts', 'enqueue_scripts');
 
 
 function enqueue_scripts() {
 
-    wp_enqueue_script('fancybox', QV_PLUGIN_JS_URL . '/jquery.colorbox-min.js', array('jquery'));
+    wp_enqueue_script('popup', QV_PLUGIN_JS_URL . '/jquery.colorbox-min.js', array('jquery'));
+     wp_enqueue_script('carousel', QV_PLUGIN_JS_URL . '/owl.carousel.min.js', array('jquery'));
 
-    wp_enqueue_style('fancybox', QV_PLUGIN_CSS_URL . '/colorbox.css');
+    wp_enqueue_style('popup', QV_PLUGIN_CSS_URL . '/colorbox.css');
+    wp_enqueue_style('carousel', QV_PLUGIN_CSS_URL . '/owl.carousel.css');
     wp_enqueue_style('stylesheet', QV_PLUGIN_CSS_URL . '/qv-style.css');
 }
-
 
 add_action('woocommerce_before_single_product_summary', 'addingGallery');
 
@@ -77,7 +94,28 @@ function addingScript() {
 
     wp_dequeue_script('woocommerce');
 
-    $text = apply_filters('quick_view_text', 'Quick View');
+    if (!get_option('quick_view_text')) {
+        $text = 'Quick View';
+        update_option('quick_view_text', $text);
+    } else {
+        $text = get_option('quick_view_text');
+    }
+
+    if (!get_option('quick_view_color')) {
+        $color = '#ec4918';
+        update_option('quick_view_color', $color);
+    } else {
+        $color = get_option('quick_view_color');
+    }
+    
+    if (!get_option('quick_view_font_color')) {
+        $fontcolor = '#ffffff';
+        update_option('quick_view_font_color', $fontcolor);
+    } else {
+        $fontcolor = get_option('quick_view_font_color');
+    }
+
+//    $text = apply_filters('quick_view_text', 'Quick View');
     ?>
 
 
@@ -126,7 +164,15 @@ function addingScript() {
                                 jQuery('.quantity .decrement').die('click');
                             },
                             onComplete: function() {
-                                jQuery('.fancybox-wrap').addClass('quickview-product-box');
+                                var owl = $("#colorbox .thumbnails");
+                                if (owl.find('a').size() > 3) {
+                                    owl.owlCarousel({
+                                        navigation: true, // Show next and prev buttons
+                                        slideSpeed: 300,
+                                        paginationSpeed: 400,
+                                        items: 3
+                                    });
+                                }
                                 setTimeout(function() {
                                     jQuery('.quantity .minus').remove();
                                     jQuery('.quantity .plus').remove();
@@ -162,11 +208,13 @@ function addingScript() {
 
             $('#content').append('<div id="view-content" style="display:none;"><div class="page-content"></div></div>');
             var text = '<?php echo $text; ?>';
+            var color = '<?php echo $color; ?>';
+            var fontcolor = '<?php echo $fontcolor; ?>';
             $('.product').each(function() {
                 var id = $(this).find('a.add_to_cart_button').attr('data-product_id');
                 var $af = $(this).find('a:first');
                 var href = $af.attr('href');
-                $(this).prepend('<span class="overlay-view-more id-' + id + '" style="display:none;"><a href="' + href + '" class="view-more" data-link="' + href + '" data-id="' + id + '"><span class="view-icon">' + text + '</span></a></span>');
+               $(this).prepend('<span class="overlay-view-more id-' + id + '" style="display:none;"><a href="' + href + '" class="view-more" data-link="' + href + '" data-id="' + id + '" style="background:' + color + ';color:'+fontcolor+';"><span class="view-icon">' + text + '</span></a></span>');
             });
             var $product = $('.product');
             $product.mouseenter(function() {
