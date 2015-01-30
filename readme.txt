@@ -1,6 +1,6 @@
 === Woocommerce Product Quick View ===
 Contributors: Unicode Systems
-Tags: ecommerce, e-commerce, commerce, wordpress ecommerce, affiliate, store, sales, sell, shop, shopping, cart, checkout, configurable, variable, widgets, reports, download, downloadable, digital, inventory, stock, reports, shipping, tax, quick view, quick-view, quick
+Tags: wordpress plugin,wp plugin,ecommerce plugin, ecommerce, e-commerce, commerce,woocommerce plugins,wordpress shop plugin,plugins for wordpress,wordpress eshop,responsive wordpress plugin,wordpress shop,wordpress ecommerce plugins,woocommerce wordpress,wordpress shopping cart,ecommerce wordpress,plugin wordpress, affiliate, store, sales, sell, shop, shopping, cart, checkout, configurable, variable, widgets, reports, download, downloadable, digital, inventory, stock, reports, shipping, tax, quick view, quick-view, quick
 Requires at least: WordPress 3.8
 Tested up to: WordPress 4.0
 License: GPLv3
@@ -43,10 +43,13 @@ Automatic updates should work like a charm; as always though, ensure you backup 
 == Screenshots ==
 1. Quick view mouse over animation on product grid.
 2.  Quick view product detail lightbox.
+3. Quick view admin settings.
 
 == Changelog ==
 
 = 1.1 =
 *Customizable Quick View Button through admin settings. User can change quick view button text , color and font color.
 *Implemented Image thumbnail carousel.
+
+=1.1.1=
 *Compatible to Woocommerce 2.3 beta version .
