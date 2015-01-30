@@ -49,3 +49,4 @@ Automatic updates should work like a charm; as always though, ensure you backup 
 = 1.1 =
 *Customizable Quick View Button through admin settings. User can change quick view button text , color and font color.
 *Implemented Image thumbnail carousel.
+*Compatible to Woocommerce 2.3 beta version .

@@ -29,7 +29,7 @@ register_activation_hook(__FILE__, 'child_plugin_activate');
 
 function child_plugin_activate() {
 
-    if (!is_plugin_active('woocommerce/woocommerce.php') and current_user_can('activate_plugins')) {
+    if (((!is_plugin_active('woocommerce-master/woocommerce.php')) and (!is_plugin_active('woocommerce/woocommerce.php'))) and current_user_can('activate_plugins')) {
         wp_die('Sorry, this plugin requires Woocommerce Plugin to be installed and active. <br><a href="' . admin_url('plugins.php') . '">&laquo; Return to Plugins</a>');
     }
 }
