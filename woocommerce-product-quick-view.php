@@ -3,7 +3,7 @@
   Plugin Name: Woocommerce Product Quick View
   Plugin URI: http://www.unicodesystems.in
   Description: This plugin is used for adding the quick view functionality to your woocommerce store. Woocommerce plugin is pre-requisite for this plugin to run.
-  Version: 1.1.1
+  Version: 1.1.2
   Author: Harshita
   Author URI: http://www.unicodesystems.in
 

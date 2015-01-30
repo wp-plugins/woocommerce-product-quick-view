@@ -48,6 +48,10 @@ Automatic updates should work like a charm; as always though, ensure you backup 
 
 == Changelog ==
 
+= 1.1.2 =
+
+*Some smaill fixes in admin settings .
+
 = 1.1.1 =
 
 *Compatible to Woocommerce 2.3 beta version .
