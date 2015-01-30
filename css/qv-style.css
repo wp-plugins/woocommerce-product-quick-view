@@ -19,6 +19,9 @@ root {display: block;}
 .quickview-product-box .page-content, .quickview-product-box .entry-content {width:100%;max-width: 100%;padding: 0;}
 .quickview-product-box .images .thumbnails a.zoom.selected {background: #333}
 .quickview-product-box .images .thumbnails a.zoom.selected img{opacity:.7;}
+.summary  .quantity{position:relative;}
+.summary  .quantity .qty{padding: 2px;}
+.woocommerce div.product form.cart div.quantity{margin-top: 4px;}
 .woocommerce #content div.product div.thumbnails a.zoom:nth-child(3n){margin-right: 0;}
 .woocommerce #content div.product div.thumbnails a.zoom{margin-bottom: 3.8%;}
 .quickview-product-box .quantity input.decrement{ background:  #e9e5e8;border: 0 none;bottom: 0;color: #777;font-size: 14px;height: 14px; border: 1px solid #c8bfc6;border-radius: 0;line-height: 10px;padding: 0;position: absolute;right: 0;width: 20px;}
