@@ -50,7 +50,7 @@ if (isset($_POST['qv_save_changes']) && $_POST['qv_save_changes'] == 'Y') { // C
                 <tr>
                     <th scope="row"><label for="blogname"><?php _e("Quick View Custom Text: "); ?></label></th>
                     <td>
-                        <input type="text" name="quick_view_text" id="quick_view_text" style="<?php if (!empty($text)) { echo 'border: 1px dotted #ff0000;'; } ?>" value="<?php echo $quick_view_text; ?>">
+                        <input type="text" name="quick_view_text" id="quick_view_text" style="<?php if (!empty($text)) { echo 'border: 1px dotted #ff0000;'; } ?>" value="<?php if (!empty($text)) {_e('Quick View'); }else{ echo $quick_view_text;} ?>">
                         <p class="description"><?php if (!empty($text)) { _e('Field cantt be blank'); } else { _e(' Quick View by default'); } ?></p>
                     </td>
                 </tr>

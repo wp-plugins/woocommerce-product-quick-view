@@ -1,6 +1,6 @@
 === Woocommerce Product Quick View ===
 Contributors: Unicode Systems
-Tags: wordpress plugin,wp plugin,ecommerce plugin, ecommerce, e-commerce, commerce,woocommerce plugins,wordpress shop plugin,plugins for wordpress,wordpress eshop,responsive wordpress plugin,wordpress shop,wordpress ecommerce plugins,woocommerce wordpress,wordpress shopping cart,ecommerce wordpress,plugin wordpress, affiliate, store, sales, sell, shop, shopping, cart, checkout, configurable, variable, widgets, reports, download, downloadable, digital, inventory, stock, reports, shipping, tax, quick view, quick-view, quick
+Tags: free quickview, wordpress plugin,wp plugin,ecommerce plugin, ecommerce, e-commerce, commerce,woocommerce plugins,wordpress shop plugin,plugins for wordpress,wordpress eshop,responsive wordpress plugin,wordpress shop,wordpress ecommerce plugins,woocommerce wordpress,wordpress shopping cart,ecommerce wordpress,plugin wordpress, store, sales, sell, shop, shopping, cart, checkout, configurable, variable, widgets, reports, download, downloadable, digital, inventory, stock, reports, shipping, tax, quick view, quick-view, quick
 Requires at least: WordPress 3.8
 Tested up to: WordPress 4.1
 License: GPLv3
