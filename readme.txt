@@ -4,6 +4,7 @@ Tags: wordpress plugin,wp plugin,ecommerce plugin, ecommerce, e-commerce, commer
 Requires at least: WordPress 3.8
 Tested up to: WordPress 4.1
 License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 WooCommerce Product Quick View gives our customer a true experience of shopping. User can view product details in a ligthbox without leaving the page.
 
@@ -42,14 +43,13 @@ Automatic updates should work like a charm; as always though, ensure you backup 
 
 == Screenshots ==
 1. Quick view mouse over animation on product grid.
-2.  Quick view product detail lightbox.
+2. Quick view product detail lightbox.
 3. Quick view admin settings.
 
 == Changelog ==
+1.1.1
+Compatible to Woocommerce 2.3 beta version .
 
-= 1.1 =
-*Customizable Quick View Button through admin settings. User can change quick view button text , color and font color.
-*Implemented Image thumbnail carousel.
-
-=1.1.1=
-*Compatible to Woocommerce 2.3 beta version .
+1.1
+Customizable Quick View Button through admin settings. User can change quick view button text , color and font color.
+Implemented Image thumbnail carousel.
