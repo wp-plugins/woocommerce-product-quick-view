@@ -66,6 +66,9 @@ function enqueue_scripts() {
 add_action('woocommerce_before_single_product_summary', 'addingGallery');
 
 function addingGallery() {
+    
+    update_option('woocommerce_enable_lightbox','no');
+    
     ?>
     <script type="text/javascript">
         jQuery(document).ready(function($) {
