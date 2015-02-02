@@ -39,7 +39,7 @@ The manual installation method involves downloading our Quick view plugin and up
 
 = Important Instruction =
 
-After proper installation, uncheck woocommerce's "Enable Lightbox" setting from admin.
+After proper installation, uncheck woocommerce's "Enable Lightbox" setting from admin to avoid conflict in product image gallery.
 
 = Updating =
 
