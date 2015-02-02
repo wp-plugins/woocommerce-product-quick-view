@@ -6,12 +6,12 @@ Tested up to: WordPress 4.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-WooCommerce Product Quick View gives our customer a true experience of shopping. User can view product details in a ligthbox without leaving the page.
+WooCommerce Product Quick View gives our customer a true experience of shopping. User can view product details in a lightbox without leaving the page.
 
 == Description ==
-WooCommerce Product Quick View gives your customer a true experience of shopping. User can view product details in a ligthbox without leaving the page.
+WooCommerce Product Quick View gives your customer a true experience of shopping. User can view product details in a lightbox without leaving the page.
 
-User can also navigate with different product by clicking next and previous product with in the same ligthbox.
+User can also navigate with different product by clicking next and previous product with in the same lightbox.
 
 This quick is completely responsive and compatible with most of the themes.
 
