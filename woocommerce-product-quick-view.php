@@ -67,7 +67,7 @@ add_action('woocommerce_before_single_product_summary', 'addingGallery');
 
 function addingGallery() {
     
-    update_option('woocommerce_enable_lightbox','no');
+    
     
     ?>
     <script type="text/javascript">
@@ -96,6 +96,9 @@ add_action('woocommerce_before_shop_loop', 'addingScript');
 function addingScript() {
 
     wp_dequeue_script('woocommerce');
+    wp_dequeue_script('prettyPhoto');
+    wp_dequeue_script('prettyPhoto-init');
+    wp_dequeue_style('woocommerce_prettyPhoto_css');
 
     if (!get_option('quick_view_text')) {
         $text = 'Quick View';
