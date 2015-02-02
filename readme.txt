@@ -37,6 +37,10 @@ In the search field type “Woocommerce Product Quick View” and click Search P
 
 The manual installation method involves downloading our Quick view plugin and uploading it to your webserver via your favourite FTP application. The WordPress codex contains [instructions on how to do this here](http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation).
 
+= Important Instruction =
+
+After proper installation, uncheck woocommerce's "Enable Lightbox" setting from admin.
+
 = Updating =
 
 Automatic updates should work like a charm; as always though, ensure you backup your site just in case.
