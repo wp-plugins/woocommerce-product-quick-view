@@ -17,7 +17,7 @@ This quick is completely responsive and compatible with most of the themes.
 
 Why we created this plugin
 
-<a href="http://www.unicodesystems.in/">Unicode System Pvt Ltd.</a> is a company created many open source software and web frameworks named as <a href="http://www.zendfox.com/">ZENDFOX</a> which has more than a million users across the globe . This plugin is just an initiation to support wordpress community.
+<a href="http://www.unicodesystems.in/">UnicodeSystems</a> is a creator of many well known open source softwares and web framework. named as <a href="http://www.zendfox.com/">ZENDFOX</a> which has more than a million users across the globe . This plugin is just an initiation to support wordpress community.
 
 == Installation ==
 = Minimum Requirements =
