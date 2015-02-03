@@ -3,7 +3,7 @@
   Plugin Name: Woocommerce Product Quick View
   Plugin URI: http://www.unicodesystems.in
   Description: This plugin is used for adding the quick view functionality to your woocommerce store. Woocommerce plugin is pre-requisite for this plugin to run.
-  Version: 1.1.2
+  Version: 1.1.3
   Author: Harshita
   Author URI: http://www.unicodesystems.in
 
@@ -138,7 +138,7 @@ function addingScript() {
                     } else {
                         jQuery(this).find('.products,#secondary,.woocommerce-tabs,header,footer,.woocommerce-breadcrumb').remove();
                         var product = jQuery(this).find('.product').clone();
-                        jQuery(this).find('#page').html(product);
+                        jQuery(this).find('div:first').html(product);
                         jQuery(this).find('.product').unwrap();
                         var $tn = jQuery(this).find('.thumbnails');
                         var $ti = jQuery(this).find('.images');

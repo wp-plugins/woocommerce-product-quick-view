@@ -52,6 +52,10 @@ Automatic updates should work like a charm; as always though, ensure you backup 
 
 == Changelog ==
 
+= 1.1.3 =
+
+*Resolve compatibilty issues with other themes .
+
 = 1.1.2 =
 
 *Some smaill fixes in admin settings .
