@@ -13,7 +13,7 @@ WooCommerce Product Quick View gives your customer a true experience of shopping
 
 User can also navigate with different product by clicking next and previous product with in the same lightbox.
 
-This quick is completely responsive and compatible with most of the themes.
+This plugin is completely responsive and compatible with most of the themes.
 
 <strong>Why we created this plugin</strong>
 
